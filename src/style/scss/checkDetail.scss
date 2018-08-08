@@ -1,0 +1,229 @@
+.check_Detail{
+	width:100%;
+	.detail_search{
+		position:relative;
+		text-align:center;
+		margin:0.4rem auto;
+		.search_icon{
+			width:0.5rem;
+			height:0.5rem;
+			position:absolute;
+			top:0.22rem;
+			left:0.8rem;
+			background: url("./assets/search.png") no-repeat;
+			background-size:100% 100%;
+		}
+		.search_ipt{
+			background: #d7d7d7;
+		    font-size: 0.44rem;
+		    color: #778087;
+			width:90%;
+			text-indent:0.9rem;
+			display: inline-block;
+	        padding: 0.18rem 0.28rem;
+		    border: 0;
+		    height: 0.575rem;
+		    border-radius: 0.25rem;
+		}
+		.scan_icon{
+			width:0.7rem;
+			height:0.7rem;
+			position:absolute;
+		    top: 0.13rem;
+    		right: 0.65rem;
+			background: url("./assets/scan_icon.png") no-repeat;
+			background-size:100% 100%;
+		}
+	}
+	.detail_wrap{
+		background:#f6f6f8;
+		margin-bottom: 0.4rem;
+		.detail_wrap_cnt{
+			margin-bottom:0.2rem;
+			background:#fff;
+			.title{
+				font-size:0.5rem;
+				color:#6b9ee0;
+				text-align:center;
+			}
+			.detail_wrap_cnt_list_wrap{
+				padding:0.25rem;
+				.detail_wrap_cnt_list_cell{
+					padding:0.125rem 0;
+					font-size:0.44rem;
+					color:#000;
+					.text{
+						font-size:0.44rem;
+					}
+				}
+				.detail_wrap_cnt_list_cell + .detail_wrap_cnt_list_cell{
+					border-top:solid 1px #f1ebeb;
+				}
+			}
+		}
+		.detail_wrap_cnt_result_edit{
+			background:#fff;
+			margin-bottom:0.2rem;
+			.title{
+				font-size:0.5rem;
+				color:#6b9ee0;
+				text-align:center;
+			}
+			.edit_cnt{
+				padding:0.15rem;
+				font-size:0.44rem;
+				color:#000;
+				.edit_block{
+				    padding: 0.15rem;
+    				background: #eee;
+    				position:relative;
+    				outline:none;
+					.drop_icon{
+					    width: 20px;
+					    height: 20px;
+					    float:right;
+					    background: url("./assets/arrow.png") no-repeat;
+					    background-size: 100% 100%;
+					}
+					.checkStatus_select{
+				        top: 37px;
+					    position: absolute;
+					    right: 0;
+					    z-index: 100;
+					    box-shadow: 0 0 10px;
+					    width: 60%;
+				        max-height: 5.0rem;
+    					overflow: auto;
+						.selectArrow{
+							position: absolute;
+						    top: -10px;
+						    right: 54px;
+						    width: 16px;
+						    height: 23px;
+						    -webkit-transform: rotate(45deg);
+						    transform: rotate(45deg);
+						    background: #fff;
+						}
+						.option_list{
+						    height: 50%;
+		    				overflow: auto;
+		    				.option_cell{
+							    padding: 0.2rem 0.3rem;
+							    background: #fff;
+							    border-bottom: 2px solid #f0f0f0;
+							    font-size: 0.44rem;
+							    display: -webkit-box;
+							    display: -ms-flexbox;
+							    display: flex;
+							    -webkit-box-align: center;
+							    -ms-flex-align: center;
+							    align-items: center;
+							    color: #353030;
+							    position: relative;
+							    .option_icon{
+						    	    display: inline-block;
+									width: 20px;
+									height: 20px;
+									margin-right: 32px;
+									margin-left: 16px;
+							    }
+							    .option_icon_address{
+						    	    background: url("./assets/address.png") no-repeat;
+						    	    background-size:cover;
+							    }
+							    .option_icon_number{
+						    	    background: url("./assets/number.png") no-repeat;
+						    	    background-size:cover;
+							    }
+		    				}
+						}
+					}
+				}
+				.edit_info{
+					font-size:0.4rem;
+					text-indent:0.2rem;
+					width:100%;
+				    display: inline-block;
+				    padding: 0.18rem 0 0.1rem;
+				    border: 0;
+				    height: 0.575rem;
+				    border-bottom:solid 1px #eee;
+				}
+			}
+		}
+		.updata_pic{
+			.pic_wrap{
+				background:#fff;
+				padding:0.25rem;
+				.title{
+					font-size:0.44rem;
+					color:#000;
+					border-bottom:0;
+					padding:0;
+				}
+				.images_wrap{
+				    display: flex;
+				    justify-content: space-between;
+				    align-items: center;
+				    margin-top:0.2rem;
+				    .upImg_wrap{
+				    	position:relative;
+				    	.upload_img{
+				    		position:absolute;
+				    		width:2rem;
+				    		height:2rem;
+				    		opacity: 0;
+				    	}
+				    	.imgs_cell{
+							display:inline-block;
+							margin-right:0.4rem;
+							position:relative;
+							.delete_img{
+								position:absolute;
+								top:-0.3rem;
+								right:-0.3rem;
+								width:0.8rem;
+								height:0.8rem;
+								text-align:center;
+								border-radius:50%;
+								line-height:0.7rem;
+								color:#fff;
+								background:red;
+								font-size:0.9rem;
+							}
+				    	}
+				    	.btn_img_label{
+				    		background:url("./assets/take_photos_icon.png") no-repeat;
+				    		background-size:cover;
+				    		display:inline-block;
+				    		width:2rem;
+				    		height:2rem;
+				    	}
+				    }
+					.defult_img{
+						width:2.5rem;
+						height:2.5rem;
+					}
+					.take_photos_icon{
+						width:1.25rem;
+						height:1.25rem;
+					}
+				}
+			}
+			.submit{
+				text-align:center;
+				margin-top:0.3rem;
+				button{
+					font-size:0.5rem;
+				    background: #4d97dc;
+				    color: #fff;
+				    border: 0;
+				    width: 100%;
+				    padding:0.25rem;
+				    border-radius: 0.125rem;
+				}
+			}
+		}
+	}
+}
+	

@@ -1,0 +1,29 @@
+.view {
+    background-color: #f6f6f8;
+    overflow: auto;
+    overflow-x:hidden;
+    -webkit-overflow-scrolling: touch;
+}
+/* 当child-view的内容过多时会撑开child-view使得内部能够滚动 */
+.slide-left-enter, .slide-right-leave-active {
+    opacity: 0;
+    -webkit-transform: translate(750/667, 0);
+    transform: translate(750/667, 0);
+    transition-delay: .5s;
+    -webkit-transition-delay: .5s;
+}
+.slide-left-leave-active, .slide-right-enter {
+    opacity: 0;
+    -webkit-transform: translate(-750/667, 0);
+    transform: translate(-750/667, 0);
+    transition-delay: .5s;
+    -webkit-transition-delay: .5s;
+}
+.slide-enter-active {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.slide-leave-active {
+    -webkit-transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
